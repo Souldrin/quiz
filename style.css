@@ -1,0 +1,30 @@
+:root {
+    --krasa: rgb(76, 184, 184);
+}
+
+body {
+    --krasa: red;
+}
+div {
+    --krasa: green;
+}
+h1 {
+    color: var(--krasa);
+}
+p {
+    color: var(--krasa);
+}
+h2 {
+    color: var(--krasa);
+}
+
+
+
+
+
+
+
+
+
+
+
