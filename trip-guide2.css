@@ -4,8 +4,6 @@
     --accent-krasa:rgb(249, 251, 231);
     --krasa2: black;
       --header-height: 60px;
-      --sun: block;
-      --moon: none;
   }
   
   html[data-theme="dark"]{
@@ -13,8 +11,6 @@
     --background-krasa: rgb(29, 38, 125);
     --accent-krasa:rgb(12, 19, 79);
     --krasa2:white;
-    --sun: none;
-    --moon: block;
 }
 
 header {
@@ -25,9 +21,6 @@ header {
     top: 0;
     left: 0;
     z-index: 2;
-    display:flex;
-    justify-content: right;
-
 }
 
 
@@ -50,9 +43,6 @@ p {
 h2 {
     color: var(--krasa2);
 }
-div {
-    color: var(--krasa2);
-}
 
 
 .grid-container {
@@ -63,24 +53,12 @@ div {
   }
   
   .grid-item {
-    background-color: var(--accent-krasa);
+    background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     margin-top: 10px;
     margin-left: 10px;
     padding: 20px;
     font-size: 30px;
     text-align: center;
-    text-decoration-color: var(--krasa2);
     
   }
-
-#toogle-theme{
-    width: 50px;
-    opacity: 0%;
-}
-#sun{
-    display: var(--sun);
-}
-#moon{
-    display: var(--moon);
-}
