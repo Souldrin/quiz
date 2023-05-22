@@ -1,64 +1,73 @@
-:root {
-    --krasa: rgb(236, 205, 180);
-    --background-krasa: rgb(240, 237, 212);
-    --accent-krasa:rgb(249, 251, 231);
-    --krasa2: black;
-      --header-height: 60px;
-  }
-  
-  html[data-theme="dark"]{
-    --krasa: rgb(92, 70, 156);
-    --background-krasa: rgb(29, 38, 125);
-    --accent-krasa:rgb(12, 19, 79);
-    --krasa2:white;
+html {
+  --header-height: 60px;
 }
 
-header {
-    width: 100vw;
-    height: var(--header-height);
-    background-color: var(--krasa);
-    position:fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
+html[data-theme="light"] {
+  --primary-color: #5c469c;
+  --secondary-color: #0c134f;
+  --tertiary-color: #1d267d;
+  --font-color: white;
 }
 
-
-main {
-    margin-top: var(--header-height);
-    background: var(--background-krasa);
+html[data-theme="dark"] {
+  --primary-color: #eccdb4;
+  --secondary-color: #f9fbe7;
+  --tertiary-color: #f0edd4;
+  --font-color: black;
 }
 
 body {
-    margin: 0;
-    background: var(--background-krasa);
+  margin: 0;
+  background-color: var(--tertiary-color);
+  color: var(--font-color);
 }
 
-h1 {
-    color: var(--krasa2);
-}
-p {
-    color: var(--krasa2);
-}
-h2 {
-    color: var(--krasa2);
+header {
+  width: 100vw;
+  height: var(--header-height);
+  background-color: var(--primary-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
+main {
+  margin-top: var(--header-height);
+
+}
+
+#toogle-theme{
+  width: 50px;
+  opacity: 0%;
+}
+#sun{
+  display: var(--sun);
+}
+#moon{
+  display: var(--moon);
+}
+
+label{
+  background-color: var(--secondary-color);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 10px;
+}
 
 .grid-container {
-    display: grid;
-    grid-template-columns: auto auto ;
-    
-    padding: 5px;
-  }
-  
-  .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    margin-top: 10px;
-    margin-left: 10px;
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-    
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+   }
+
+   label[input="radio"]{
+     display:none;
+   }
+
+   p {
+     margin-top: 100px;
+   }

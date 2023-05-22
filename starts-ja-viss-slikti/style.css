@@ -34,40 +34,4 @@ header {
 
 main {
   margin-top: var(--header-height);
-
 }
-
-#toogle-theme{
-  width: 50px;
-  opacity: 0%;
-}
-#sun{
-  display: var(--sun);
-}
-#moon{
-  display: var(--moon);
-}
-
-label{
-  background-color: var(--secondary-color);
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  border-radius: 10px;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-   }
-
-   label[input="radio"]{
-     display:none;
-   }
-
-   p {
-     margin-top: 100px;
-   }
