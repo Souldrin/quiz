@@ -1,0 +1,86 @@
+:root {
+    --krasa: rgb(236, 205, 180);
+    --background-krasa: rgb(240, 237, 212);
+    --accent-krasa:rgb(249, 251, 231);
+    --krasa2: black;
+      --header-height: 60px;
+      --sun: block;
+      --moon: none;
+  }
+  
+  html[data-theme="dark"]{
+    --krasa: rgb(92, 70, 156);
+    --background-krasa: rgb(29, 38, 125);
+    --accent-krasa:rgb(12, 19, 79);
+    --krasa2:white;
+    --sun: none;
+    --moon: block;
+}
+
+header {
+    width: 100vw;
+    height: var(--header-height);
+    background-color: var(--krasa);
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display:flex;
+    justify-content: right;
+
+}
+
+
+main {
+    margin-top: var(--header-height);
+    background: var(--background-krasa);
+}
+
+body {
+    margin: 0;
+    background: var(--background-krasa);
+}
+
+h1 {
+    color: var(--krasa2);
+}
+p {
+    color: var(--krasa2);
+}
+h2 {
+    color: var(--krasa2);
+}
+div {
+    color: var(--krasa2);
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto ;
+    
+    padding: 5px;
+  }
+  
+  .grid-item {
+    background-color: var(--accent-krasa);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration-color: var(--krasa2);
+    
+  }
+
+#toogle-theme{
+    width: 50px;
+    opacity: 0%;
+}
+#sun{
+    display: var(--sun);
+}
+#moon{
+    display: var(--moon);
+}
